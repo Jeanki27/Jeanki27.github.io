@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work Examples | Jean C. Vazquez Otero</title>
+<meta name="description" content="Cybersecurity work samples: the SnowBe Online security plan, physical security and vulnerability management policies, a CMMC maturity assessment, and a CIS Controls case study.">
+<meta name="keywords" content="cybersecurity portfolio, security engineer, DevSecOps, platform operations engineer, NIST 800-53, PCI DSS, CIS Controls, CMMC, vulnerability management, security policy, security plan, Secret clearance, Marine Corps veteran, Orlando, Central Florida, Space Coast">
+<meta name="author" content="Jean C. Vazquez Otero">
+<link rel="canonical" href="https://jeanki27.github.io/work.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Work Examples | Jean C. Vazquez Otero">
+<meta property="og:description" content="Cybersecurity work samples: the SnowBe Online security plan, physical security and vulnerability management policies, a CMMC maturity assessment, and a CIS Controls case study.">
+<meta property="og:url" content="https://jeanki27.github.io/work.html">
+<meta name="theme-color" content="#14264a">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="Home">
+      <span class="mono">JV</span>
+      <span class="brand-name">Jean C. Vazquez Otero<span class="brand-role">Cybersecurity and DevSecOps</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul><li><a href="index.html">Home</a></li><li><a href="resume.html">Résumé</a></li><li><a href="work.html" aria-current="page">Work Examples</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Work Examples</span>
+    <h1>Curated work samples</h1>
+    <p>Each sample below includes a short description, what it shows, who I worked with, the case study it is based on, and a clean, corrected PDF. Four of them build one security program for SnowBe Online, a fictional retailer, across two courses.</p>
+  </div>
+</section>
+<div class="toc-bar"><div class="wrap"><ul class="toc">
+  <li><a href="#work1">Security Plan</a></li><li><a href="#work2">Physical Security Policy</a></li><li><a href="#work3">Vulnerability Management Policy</a></li>
+  <li><a href="#work4">Maturity Assessment</a></li><li><a href="#work5">Luigi's Case Study</a></li>
+</ul></div></div>
+<section>
+  <div class="wrap work">
+    
+<article class="work-card" id="work1">
+  <div class="work-top">
+    <div class="num">01</div>
+    <div><h3>SnowBe Online Security Plan, Version 3.0</h3><ul class="meta"><li>Security Plan</li><li>NIST SP 800-53</li><li>PCI DSS</li><li>Project and Portfolio IV and V</li></ul></div>
+  </div>
+  <div class="work-body">
+    <p>The security plan is the umbrella document for SnowBe's whole security program. It sets the scope, the definitions, the roles and responsibilities from the chief executive officer down to store managers, every policy, standard, and procedure the company follows, how exceptions work and how long they last, and a version history. Version 1.0 was written by my group in Project and Portfolio IV, I added three policies in Version 2.0 in Project and Portfolio V, and Version 3.0 is the corrected copy that brings both together.</p>
+    <h4>What it shows</h4>
+    <ul><li>Corrections from grading: a working table of contents, a dated version history table, an exception time limit (90 days, renewable once, 180 days at most), and a note on every citation stating which section it supports.</li><li>Replaced banking laws that do not apply to a retailer with the rules that do: PCI DSS, the Securities and Exchange Commission's four business day incident disclosure rule for public companies, and the General Data Protection Regulation's 72 hour breach notice.</li><li>Summarizes every SnowBe policy, standard, and procedure in one place with its policy number, and lines up the vulnerability and patch deadlines so every policy uses the same numbers.</li></ul>
+    <p class="collab"><strong>Collaborators:</strong> Version 1.0 was written with Group 3: Corwin Schuller, Justin Robbins, and Raymond Nicole. Versions 2.0 and 3.0 are my own work.</p>
+    <div class="btns"><a class="btn navy small" href="docs/SnowBe_Security_Plan_v3.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h6"/></svg>View the Security Plan (PDF)</a></div>
+    
+<details class="case">
+  <summary>Read the SnowBe Online case study</summary>
+  <p>SnowBe Online is a lifestyle brand for people who love the beach and the snow. Its laid back culture connected with customers and took the company to $100 million in sales in three years, and management then took the company public.</p>
+  <ul>
+    <li>Most sales run through a website on Amazon Web Services, which accepts and stores every credit card and keeps all customer information and purchase history indefinitely.</li>
+    <li>Storefronts in the United States and Europe take checks, cash, and credit cards on bank provided card terminals.</li>
+    <li>The Los Angeles office has twenty desktops and thirty sales laptops that connect over a virtual private network, plus six servers on premise and in Amazon Web Services.</li>
+    <li>Because of the laid back culture, technical controls and processes were neglected, so SnowBe hired a technical consultant who started implementing NIST SP 800-53 controls and analyzed risk with the NIST Risk Management Framework.</li>
+    <li>The consultant's first steps: update network firmware, patch every PC and Windows server, update antivirus and backup software, tighten access management, lock the servers in a secured area, update the WordPress shopping cart, and reach PCI compliance.</li>
+  </ul>
+  <p><a class="btn outline small" href="docs/SnowBe_Online_Case_Study.pdf" target="_blank" rel="noopener">Open the original case (PDF)</a></p>
+</details>
+  </div>
+</article>
+<article class="work-card" id="work2">
+  <div class="work-top">
+    <div class="num">02</div>
+    <div><h3>Physical Security Policy, Policy PE-03</h3><ul class="meta"><li>Security Policy</li><li>PCI DSS Requirement 9</li><li>NIST PE-2, PE-3, PE-6, PE-8</li><li>Project and Portfolio IV</li></ul></div>
+  </div>
+  <div class="work-body">
+    <p>SnowBe kept six servers in an open office and runs bank card terminals in stores on two continents. This policy locks the servers in a badge controlled server room with camera coverage, requires a visitor log and escorts, sets rules for laptops and equipment disposal, and makes store managers keep a list of every payment terminal and inspect each one daily for skimmers.</p>
+    <h4>What it shows</h4>
+    <ul><li>Version 1.1 fixes the problems found in grading: the policy number is on the cover, headers and spacing are consistent, and each citation says which section it supports.</li><li>The original Policy section held vulnerability management text pasted in by mistake. I replaced it with seven physical security statements written for SnowBe.</li><li>Every exception has a written request, two approvers, and a 30 day limit.</li></ul>
+    <p class="collab"><strong>Collaborators:</strong> Individual work.</p>
+    <div class="btns"><a class="btn navy small" href="docs/SnowBe_Physical_Security_Policy_PE03.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h6"/></svg>View the Policy (PDF)</a></div>
+    
+<details class="case">
+  <summary>Read the SnowBe Online case study</summary>
+  <p>SnowBe Online is a lifestyle brand for people who love the beach and the snow. Its laid back culture connected with customers and took the company to $100 million in sales in three years, and management then took the company public.</p>
+  <ul>
+    <li>Most sales run through a website on Amazon Web Services, which accepts and stores every credit card and keeps all customer information and purchase history indefinitely.</li>
+    <li>Storefronts in the United States and Europe take checks, cash, and credit cards on bank provided card terminals.</li>
+    <li>The Los Angeles office has twenty desktops and thirty sales laptops that connect over a virtual private network, plus six servers on premise and in Amazon Web Services.</li>
+    <li>Because of the laid back culture, technical controls and processes were neglected, so SnowBe hired a technical consultant who started implementing NIST SP 800-53 controls and analyzed risk with the NIST Risk Management Framework.</li>
+    <li>The consultant's first steps: update network firmware, patch every PC and Windows server, update antivirus and backup software, tighten access management, lock the servers in a secured area, update the WordPress shopping cart, and reach PCI compliance.</li>
+  </ul>
+  <p><a class="btn outline small" href="docs/SnowBe_Online_Case_Study.pdf" target="_blank" rel="noopener">Open the original case (PDF)</a></p>
+</details>
+  </div>
+</article>
+<article class="work-card" id="work3">
+  <div class="work-top">
+    <div class="num">03</div>
+    <div><h3>Vulnerability Management Policy, Policy RA-05</h3><ul class="meta"><li>Security Policy</li><li>PCI DSS Requirement 11</li><li>NIST RA-5 and SI-2</li><li>Project and Portfolio IV</li></ul></div>
+  </div>
+  <div class="work-body">
+    <p>This policy sets how SnowBe finds, rates, fixes, and proves the fix for vulnerabilities across its Amazon Web Services website, servers, endpoints, network devices, and store terminals. It requires authenticated internal scans and external scans by an Approved Scanning Vendor at least quarterly, a penetration test at least once a year, and monthly reporting to the IT Director.</p>
+    <h4>What it shows</h4>
+    <ul><li>Severity comes from the CVSS base score, anything in CISA's Known Exploited Vulnerabilities Catalog is treated as critical, and anything inside the cardholder data environment moves up one level.</li><li>Version 1.1 corrects the zero day definition and aligns the fix deadlines with SnowBe's patch management policy: critical within 7 days, high 30, medium 60, and low 90.</li><li>Exceptions need a compensating control, last 90 days, and can be renewed only once.</li></ul>
+    <p class="collab"><strong>Collaborators:</strong> Individual work.</p>
+    <div class="btns"><a class="btn navy small" href="docs/SnowBe_Vulnerability_Management_Policy_RA05.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h6"/></svg>View the Policy (PDF)</a></div>
+    
+<details class="case">
+  <summary>Read the SnowBe Online case study</summary>
+  <p>SnowBe Online is a lifestyle brand for people who love the beach and the snow. Its laid back culture connected with customers and took the company to $100 million in sales in three years, and management then took the company public.</p>
+  <ul>
+    <li>Most sales run through a website on Amazon Web Services, which accepts and stores every credit card and keeps all customer information and purchase history indefinitely.</li>
+    <li>Storefronts in the United States and Europe take checks, cash, and credit cards on bank provided card terminals.</li>
+    <li>The Los Angeles office has twenty desktops and thirty sales laptops that connect over a virtual private network, plus six servers on premise and in Amazon Web Services.</li>
+    <li>Because of the laid back culture, technical controls and processes were neglected, so SnowBe hired a technical consultant who started implementing NIST SP 800-53 controls and analyzed risk with the NIST Risk Management Framework.</li>
+    <li>The consultant's first steps: update network firmware, patch every PC and Windows server, update antivirus and backup software, tighten access management, lock the servers in a secured area, update the WordPress shopping cart, and reach PCI compliance.</li>
+  </ul>
+  <p><a class="btn outline small" href="docs/SnowBe_Online_Case_Study.pdf" target="_blank" rel="noopener">Open the original case (PDF)</a></p>
+</details>
+  </div>
+</article>
+<article class="work-card" id="work4">
+  <div class="work-top">
+    <div class="num">04</div>
+    <div><h3>Simple Maturity Model Assessment and Prioritization</h3><ul class="meta"><li>Maturity Assessment</li><li>CMMC 17 Domains</li><li>Prioritization</li><li>Project and Portfolio V</li></ul></div>
+  </div>
+  <div class="work-body">
+    <p>Acting as SnowBe's security consultant, I rated the whole company on a five level maturity scale across all seventeen Cybersecurity Maturity Model Certification domains, after the consultant had added Active Directory, a remote monitoring tool, a firewall, antivirus, and a backup server. The spreadsheet is color coded from 1 (initial) to 5 (optimizing) and explains every rating. I then ranked all seventeen domains in the order I would fix them and traced four of them down to a specific CMMC practice and a next best step.</p>
+    <h4>What it shows</h4>
+    <ul><li>Nine domains sat at level 1, so I put Risk Management and Incident Response first: a company holding card data on a public website needs to know its risks and how to respond before anything else.</li><li>Separated how important a domain is from how urgent it is, which is why Awareness and Training ranks sixth even though it scored a 1.</li><li>Gave each top priority a no cost next step, such as a quarterly risk register, a quarterly access review in Active Directory, a deny by default firewall review, and Group Policy audit logging.</li></ul>
+    <p class="collab"><strong>Collaborators:</strong> Individual work.</p>
+    <div class="btns"><a class="btn navy small" href="docs/SnowBe_Maturity_Assessment_and_Prioritization.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>View the Assessment (PDF)</a></div>
+    
+<details class="case">
+  <summary>Read the SnowBe Online case study</summary>
+  <p>SnowBe Online is a lifestyle brand for people who love the beach and the snow. Its laid back culture connected with customers and took the company to $100 million in sales in three years, and management then took the company public.</p>
+  <ul>
+    <li>Most sales run through a website on Amazon Web Services, which accepts and stores every credit card and keeps all customer information and purchase history indefinitely.</li>
+    <li>Storefronts in the United States and Europe take checks, cash, and credit cards on bank provided card terminals.</li>
+    <li>The Los Angeles office has twenty desktops and thirty sales laptops that connect over a virtual private network, plus six servers on premise and in Amazon Web Services.</li>
+    <li>Because of the laid back culture, technical controls and processes were neglected, so SnowBe hired a technical consultant who started implementing NIST SP 800-53 controls and analyzed risk with the NIST Risk Management Framework.</li>
+    <li>The consultant's first steps: update network firmware, patch every PC and Windows server, update antivirus and backup software, tighten access management, lock the servers in a secured area, update the WordPress shopping cart, and reach PCI compliance.</li>
+  </ul>
+  <p><a class="btn outline small" href="docs/SnowBe_Online_Case_Study.pdf" target="_blank" rel="noopener">Open the original case (PDF)</a></p>
+</details>
+  </div>
+</article>
+<article class="work-card" id="work5">
+  <div class="work-top">
+    <div class="num">05</div>
+    <div><h3>Case Study: Luigi's Inc. PSL Malware Breach</h3><ul class="meta"><li>Case Study</li><li>CIS Controls v8</li><li>Implementation Groups 1 and 2</li><li>Project and Portfolio VI</li></ul></div>
+  </div>
+  <div class="work-body">
+    <p>An employee at Luigi's Inc. connected an infected personal laptop to the corporate wireless network. Over a three day weekend the attacker scanned the network, found an FTP server that allowed anonymous logins, and sent the company's program files, drawings, patents, and legal documents out over an encrypted connection. I analyzed how the attack happened and matched every problem to the CIS Controls and Safeguards that would have stopped it.</p>
+    <h4>What it shows</h4>
+    <ul><li>Results: 15 issues that let the attack happen, 11 CIS Controls (1, 3, 4, 7, 8, 9, 10, 12, 13, 14, and 17), and 39 Safeguards, with a table mapping every issue to at least one Control.</li><li>Placed Luigi's in Implementation Group 1, adding Implementation Group 2 Safeguards only where the facts support them, such as its Network Operations Center and high value intellectual property.</li><li>The full case is included at the start of the PDF, followed by a summary of results.</li></ul>
+    <p class="collab"><strong>Collaborators:</strong> Individual work.</p>
+    <div class="btns"><a class="btn navy small" href="docs/Luigis_Case_Study_CIS_Controls.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h6"/></svg>View the Case Study (PDF)</a></div>
+    <details class="case"><summary>Read the Luigi's Inc. case summary</summary>
+<p>A Luigi's employee unknowingly brought a laptop infected with the PSL malware tool into the facility and joined it to the corporate network through a wireless access point, where it received an address from DHCP and called out to its command and control server. The attacker had it scan the network, found an internal FTP server with anonymous access, compressed its contents, and sent them out over an encrypted VPN connection during a three day weekend. The Network Operations Center saw the large encrypted transfer but could not read it, and the destination was missing from a block list that was four months out of date. On Tuesday the desktop technician found the laptop was not a company machine, confiscated it, and closed the ticket. Forensics later found that the stolen folders held parts lists, price quotes, proprietary drawings, the chief executive officer's patents, and legal documents.</p>
+<p>The complete case text is near the start of the PDF.</p></details>
+  </div>
+</article>
+    <p class="note">All files open as PDFs in a new tab. The SnowBe documents are written for a fictional company described in the Full Sail University case study, and the Luigi's Inc. case comes from my Project and Portfolio VI course.</p>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div><a href="index.html">Home</a><a href="resume.html">Résumé</a><a href="work.html">Work Examples</a><a href="contact.html">Contact</a></div>
+    <div>&copy; 2026 Jean C. Vazquez Otero &middot; Last updated November 2026</div>
+  </div>
+</footer>
+</body>
+</html>

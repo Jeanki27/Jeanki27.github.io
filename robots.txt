@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jeanki27.github.io/sitemap.xml
